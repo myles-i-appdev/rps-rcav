@@ -1,0 +1,20 @@
+<a href="/"> Rules</a>
+<a href="/rock"> Play Rock</a>
+<a href="/paper"> Play Paper</a>
+<a href="/scissors"> Play Scissors</a>
+
+<% computer_move = ["rock","paper", "scissors"].sample %>
+<% user_move = "paper"%>
+
+<h2> We played <%= user_move%>! </h2>
+<h2> They played <%= computer_move %>! </h2>
+
+<%if computer_move == user_move %>
+    <h2> We tied! </h2>
+<% elsif computer_move == "rock"%>
+    <h2> We won! </h2>
+<% elsif computer_move == "scissors"%>
+    <h2> We lost! </h2>
+<% end%>
+
+
